@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinme-SAC - Login</title>
+  <link rel="stylesheet" href="../public/css/auth.css">
+</head>
+<body>
+  <div class="auth-container">
+  <div class="auth-card">
+    <div class="auth-header">
+      <div class="logo-container">
+        <img src="../public/image/logo.png" alt="Sinme-SAC Logo" class="logo">
+      </div>
+      <h2>Iniciar Sesión</h2>
+      <p>Bienvenido de vuelta</p>
+    </div>
+    
+    <!-- Cambiamos el action y method para manejarlo con JavaScript -->
+    <form id="loginForm">
+      <div class="form-group">
+        <!-- Cambiamos a text para permitir usuario o email -->
+        <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+        <label for="usernameOrEmail">Usuario o Correo Electrónico</label>
+        <span class="focus-border"></span>
+        <!-- Agregamos elemento para mensajes de error -->
+        <div id="usernameOrEmail-error" class="error-message"></div>
+      </div>
+      
+      <div class="form-group">
+        <input type="password" id="password" name="password" required>
+        <label for="password">Contraseña</label>
+        <span class="focus-border"></span>
+        <!-- Agregamos elemento para mensajes de error -->
+        <div id="password-error" class="error-message"></div>
+        <button type="button" class="toggle-password" aria-label="Mostrar contraseña">
+          <!-- Asumimos que estás usando Font Awesome -->
+          <i class="eye-icon fa fa-eye"></i>
+        </button>
+      </div>
+      
+      <div class="form-options">
+        <label class="remember-me">
+          <input type="checkbox" name="remember" id="remember">
+          <span class="checkmark"></span>
+          Recordarme
+        </label>
+      </div>
+      <button type="submit" class="btn">
+        <span class="btn-text">Ingresar</span>
+        <div class="btn-loader hidden">
+          <!-- Spinner de carga -->
+          <i class="fa fa-spinner fa-spin"></i>
+        </div>
+      </button>
+    </form>
+    
+    <div class="auth-footer">
+      <p>¿No tienes una cuenta? <a href="../views/register.html">Regístrate aquí</a></p>
+      <p class="back-link"><a href="../views/index.html"><i class="fas fa-home"></i> Volver a la página principal</a></p>
+    </div>
+  </div>
+  
+  <div class="notification hidden" id="notification"></div>
+</div>
+  
+  <script src="../public/js/auth.js"> </script>
+</body>
