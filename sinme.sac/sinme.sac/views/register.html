@@ -17,23 +17,23 @@
         <p>Únete a nuestra plataforma</p>
       </div>
       
-      <form id="registerForm" action="../php/register.php" method="POST">
+      <form id="registerForm" action="/register" method="POST">
         <div class="form-group">
-          <input type="text" id="username" name="Nombre" required>
+          <input type="text" id="username" name="username" required>
           <label for="username">Nombre de Usuario</label>
           <span class="focus-border"></span>
           <span class="error-message" id="username-error"></span>
         </div>
         
         <div class="form-group">
-          <input type="email" id="email" name="Correo" required>
+          <input type="email" id="email" name="email" required>
           <label for="email">Correo Electrónico</label>
           <span class="focus-border"></span>
           <span class="error-message" id="email-error"></span>
         </div>
         
         <div class="form-group">
-          <input type="password" id="password" name="Contrasena" required>
+          <input type="password" id="password" name="password" required>
           <label for="password">Contraseña</label>
           <span class="focus-border"></span>
           <span class="error-message" id="password-error"></span>
@@ -73,7 +73,7 @@
       </form>
       
       <div class="auth-footer">
-        <p>¿Ya tienes una cuenta? <a href="../views/login.php">Inicia sesión aquí</a></p>
+        <p>¿Ya tienes una cuenta? <a href="../views/login.html">Inicia sesión aquí</a></p>
       </div>
     </div>
     

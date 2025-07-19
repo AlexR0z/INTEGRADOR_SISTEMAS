@@ -295,8 +295,7 @@
 }
 
 #productModal {
-    display: block !important;
-    border: 2px;
+    border: none;
     border-radius: var(--border-radius);
     padding: 0;
     max-width: 500px;

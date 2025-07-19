@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinme-SAC - Materiales Eléctricos</title>
+
+  <link rel="stylesheet" href="../public/css/productos.css">
+</head>
+<body> 
+<div class="dashboard-container">
+    <aside class="sidebar" aria-label="Menú principal">
+        <div class="sidebar-header">
+            <a href="../views/dashboard.html" aria-current="page">
+                <img src="../public/image/logo.png" alt="Sinme-SAC Logo" width="150" height="50">
+            </a>
+            <h3>Panel de Control</h3>
+        </div>
+        
+        <nav class="sidebar-nav" aria-label="Navegación principal">
+            <ul role="menu">
+                <li role="menuitem">
+                    <a href="../views/dashboard.html" class="nav-link">
+                        <span class="icon">🏠</span>
+                        <span class="text">Inicio</span>
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="../views/tools.html" class="nav-link">
+                        <span class="icon">🛠️</span>
+                        <span class="text">Herramientas</span>
+                    </a>
+                </li>
+                <li role="menuitem" class="active">
+                    <a href="../views/electrical.html" class="nav-link" aria-current="page">
+                        <span class="icon">💡</span>
+                        <span class="text">Materiales Eléctricos</span>
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="../views/sanitary.html" class="nav-link">
+                        <span class="icon">🚿</span>
+                        <span class="text">Materiales Sanitarios</span>
+                    </a>
+                </li>
+                <li role="menuitem" class="logout-item">
+                    <a href="../views/login.html" class="nav-link">
+                        <span class="icon">🔒</span>
+                        <span class="text">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <main class="main-content" id="main-content">
+        <header class="main-header">
+            <div class="header-content">
+                <h1>Materiales Eléctricos</h1>
+                <p class="subtitle">Gestión de inventario</p>
+            </div>
+            <button class="btn primary-btn" id="addProductBtn" aria-label="Agregar nuevo producto">
+                <span class="btn-icon">+</span> Agregar Producto
+            </button>
+        </header>
+        
+        <section class="products-section" aria-labelledby="products-heading">
+            <div class="section-header">
+                <h2 id="products-heading">Inventario Actual</h2>
+                <div class="search-filter">
+                    <input type="text" id="productSearch" placeholder="Buscar productos..." aria-label="Buscar productos">
+                    <select id="productFilter" aria-label="Filtrar productos">
+                        <option value="all">Todos</option>
+                        <option value="low-stock">Bajo stock</option>
+                        <option value="high-price">Mayor precio</option>
+                        <option value="low-price">Menor precio</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid" role="grid" aria-label="Lista de productos eléctricos">
+                <!-- Producto 1: Foco LED -->
+                <article class="product-card" role="gridcell" data-id="prod001" data-category="iluminacion">
+                    <div class="product-image-container">
+                        <img src="/images/foco-led.jpg" 
+                             alt="Foco LED 12W" 
+                             class="product-image"
+                             loading="lazy"
+                             width="300"
+                             height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Foco LED 12W</h3>
+                        <p class="product-sku">ELEC-FCLED12</p>
+                        
+                        <div class="price-container">
+                            <p class="price">S/ 12.90</p>
+                        </div>
+                        
+                        <div class="stock-container">
+                            <p class="stock low-stock">
+                                <span class="stock-icon">⚠️</span> Bajo stock: 8 unidades
+                            </p>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn-sm edit-btn" data-id="prod001">
+                                Editar
+                            </button>
+                            <button class="btn-sm delete-btn" data-id="prod001">
+                                Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Producto 2: Cable eléctrico -->
+                <article class="product-card" role="gridcell" data-id="prod002" data-category="cables">
+                    <div class="product-image-container">
+                        <img src="/images/cable-electrico.jpg" 
+                             alt="Cable THW 2.5mm 100m" 
+                             class="product-image"
+                             loading="lazy"
+                             width="300"
+                             height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cable THW 2.5mm</h3>
+                        <p class="product-sku">ELEC-CBL25</p>
+                        
+                        <div class="price-container">
+                            <p class="price">S/ 185.00</p>
+                        </div>
+                        
+                        <div class="stock-container">
+                            <p class="stock">
+                                <span class="stock-icon">✔️</span> Stock: 15 unidades
+                            </p>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn-sm edit-btn" data-id="prod002">
+                                Editar
+                            </button>
+                            <button class="btn-sm delete-btn" data-id="prod002">
+                                Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Producto 3: Interruptor simple -->
+                <article class="product-card" role="gridcell" data-id="prod003" data-category="interruptores">
+                    <div class="product-image-container">
+                        <img src="/images/interruptor.jpg" 
+                             alt="Interruptor Simple Blanco" 
+                             class="product-image"
+                             loading="lazy"
+                             width="300"
+                             height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Interruptor Simple</h3>
+                        <p class="product-sku">ELEC-INTSIMP</p>
+                        
+                        <div class="price-container">
+                            <p class="price">S/ 8.50</p>
+                        </div>
+                        
+                        <div class="stock-container">
+                            <p class="stock">
+                                <span class="stock-icon">✔️</span> Stock: 22 unidades
+                            </p>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn-sm edit-btn" data-id="prod003">
+                                Editar
+                            </button>
+                            <button class="btn-sm delete-btn" data-id="prod003">
+                                Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Producto 4: Breaker -->
+                <article class="product-card" role="gridcell" data-id="prod005" data-category="proteccion">
+                    <div class="product-image-container">
+                        <img src="/images/breaker.jpg" 
+                             alt="Breaker 20A 2P" 
+                             class="product-image"
+                             loading="lazy"
+                             width="300"
+                             height="200">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Breaker 20A 2P</h3>
+                        <p class="product-sku">ELEC-BRK20A</p>
+                        
+                        <div class="price-container">
+                            <p class="price">S/ 32.00</p>
+                        </div>
+                        
+                        <div class="stock-container">
+                            <p class="stock low-stock">
+                                <span class="stock-icon">⚠️</span> Bajo stock: 3 unidades
+                            </p>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn-sm edit-btn" data-id="prod005">
+                                Editar
+                            </button>
+                            <button class="btn-sm delete-btn" data-id="prod005">
+                                Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- Modal para agregar/editar productos -->
+<dialog id="productModal" aria-labelledby="modal-title">
+    <div class="modal-content">
+        <h2 id="modal-title">Agregar Nuevo Producto</h2>
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Nombre del Producto</label>
+                <input type="text" id="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="productCategory">Categoría</label>
+                <select id="productCategory" required>
+                    <option value="">Seleccione una categoría</option>
+                    <option value="iluminacion">Iluminación</option>
+                    <option value="cables">Cables</option>
+                    <option value="interruptores">Interruptores</option>
+                    <option value="tomacorrientes">Tomas Corriente</option>
+                    <option value="proteccion">Protección Eléctrica</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Precio (S/)</label>
+                <input type="number" id="productPrice" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="productStock">Stock</label>
+                <input type="number" id="productStock" required>
+            </div>
+             <div class="form-group">
+                <label for="productImage">Imagen del Producto</label>
+                <div class="image-upload-container">
+                    <input type="file" id="productImage" accept="image/*" style="display: none;">
+                    <label for="productImage" class="image-upload-label">
+                        <span id="imagePreviewText">Haz clic para subir una imagen</span>
+                        <img id="imagePreview" style="display: none; max-width: 100%; max-height: 150px;">
+                    </label>
+                </div>
+            </div>
+        </form>
+        <div class="modal-actions">
+            <button class="btn secondary-btn" id="cancelModal">Cancelar</button>
+            <button class="btn primary-btn" id="submitModal">Guardar</button>
+        </div>
+    </div>
+</dialog>
+  <script src="../public/js/elertricidad.js"> </script>
+</body>

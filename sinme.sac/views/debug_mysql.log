@@ -1,0 +1,168 @@
+[2025-07-17 22:37:39] Intento de acceso con método no POST
+[2025-07-17 22:37:39] Intento de acceso con método no POST
+[2025-07-17 22:41:10] Intento de acceso con método no POST
+[2025-07-17 22:41:11] Intento de acceso con método no POST
+[2025-07-17 22:41:34] Iniciando proceso de login
+[2025-07-17 22:41:34] Datos recibidos - Correo: at_amanda05@gmail.com, Contraseña: Ellanoteama
+[2025-07-17 22:41:34] Correo escapado: at_amanda05@gmail.com
+[2025-07-17 22:41:34] Consulta SQL a ejecutar: SELECT IDusuario, Nombre, Correo, Contraseña, Roll FROM usuarios WHERE Correo = 'at_amanda05@gmail.com'
+[2025-07-17 22:41:34] Consulta ejecutada correctamente
+[2025-07-17 22:41:34] Resultado de la consulta: Array
+(
+    [IDusuario] => 10
+    [Nombre] => Walter
+    [Correo] => at_amanda05@gmail.com
+    [Contraseña] => $2y$10$HOdnzlLDFc3RY
+    [Roll] => usuario
+)
+
+[2025-07-17 22:41:34] Usuario encontrado en BD: at_amanda05@gmail.com
+[2025-07-17 22:41:34] Contraseña incorrecta para usuario: at_amanda05@gmail.com
+[2025-07-17 22:41:34] Error final: Contraseña incorrecta.
+[2025-07-17 22:50:11] Iniciando proceso de login
+[2025-07-17 22:50:11] Datos recibidos - Correo: at_amanda05@gmail.com, Contrasena: 
+[2025-07-17 22:50:11] Correo escapado: at_amanda05@gmail.com
+[2025-07-17 22:50:11] Consulta SQL a ejecutar: SELECT IDusuario, Nombre, Correo, Contrasena, Roll FROM usuarios WHERE Correo = 'at_amanda05@gmail.com'
+[2025-07-17 22:50:11] Consulta ejecutada correctamente
+[2025-07-17 22:50:11] Resultado de la consulta: Array
+(
+    [IDusuario] => 10
+    [Nombre] => Walter
+    [Correo] => at_amanda05@gmail.com
+    [Contrasena] => $2y$10$HOdnzlLDFc3RY
+    [Roll] => usuario
+)
+
+[2025-07-17 22:50:11] Usuario encontrado en BD: at_amanda05@gmail.com
+[2025-07-17 22:50:11] Contraseña incorrecta para usuario: at_amanda05@gmail.com
+[2025-07-17 22:50:11] Error final: Contraseña incorrecta.
+[2025-07-17 22:52:16] Intento de acceso con método no POST
+[2025-07-17 22:52:19] Intento de acceso con método no POST
+[2025-07-17 22:52:20] Intento de acceso con método no POST
+[2025-07-17 22:52:26] Iniciando proceso de login
+[2025-07-17 22:52:26] Datos recibidos - Correo: pepe@pepe.com, Contrasena: pepe
+[2025-07-17 22:52:26] Correo escapado: pepe@pepe.com
+[2025-07-17 22:52:26] Consulta SQL a ejecutar: SELECT IDusuario, Nombre, Correo, Contrasena, Roll FROM usuarios WHERE Correo = 'pepe@pepe.com'
+[2025-07-17 22:52:26] Consulta ejecutada correctamente
+[2025-07-17 22:52:26] Resultado de la consulta: Array
+(
+    [IDusuario] => 11
+    [Nombre] => pepe
+    [Correo] => pepe@pepe.com
+    [Contrasena] => pepe
+    [Roll] => usuario
+)
+
+[2025-07-17 22:52:26] Usuario encontrado en BD: pepe@pepe.com
+[2025-07-17 22:52:26] Contraseña incorrecta para usuario: pepe@pepe.com
+[2025-07-17 22:52:26] Error final: Contraseña incorrecta.
+[2025-07-17 22:54:58] Iniciando proceso de login
+[2025-07-17 22:54:58] Datos recibidos - Correo: pepe@pepe.com, Contrasena: pepe
+[2025-07-17 22:54:58] Correo escapado: pepe@pepe.com
+[2025-07-17 22:54:58] Consulta SQL a ejecutar: SELECT IDusuario, Nombre, Correo, Contrasena, Roll FROM usuarios WHERE Correo = 'pepe@pepe.com'
+[2025-07-17 22:54:58] Consulta ejecutada correctamente
+[2025-07-17 22:54:58] Resultado de la consulta: Array
+(
+    [IDusuario] => 11
+    [Nombre] => pepe
+    [Correo] => pepe@pepe.com
+    [Contrasena] => pepe
+    [Roll] => usuario
+)
+
+[2025-07-17 22:54:58] Usuario encontrado en BD: pepe@pepe.com
+[2025-07-17 22:54:58] Contraseña verificada correctamente
+[2025-07-17 22:54:58] Sesión iniciada para usuario ID: 11
+[2025-07-17 22:54:58] Redirigiendo a index.html
+[2025-07-17 22:55:01] Intento de acceso con método no POST
+[2025-07-17 22:55:06] Iniciando proceso de login
+[2025-07-17 22:55:06] Datos recibidos - Correo: pepe@pepe.com, Contrasena: pepe
+[2025-07-17 22:55:06] Correo escapado: pepe@pepe.com
+[2025-07-17 22:55:06] Consulta SQL a ejecutar: SELECT IDusuario, Nombre, Correo, Contrasena, Roll FROM usuarios WHERE Correo = 'pepe@pepe.com'
+[2025-07-17 22:55:06] Consulta ejecutada correctamente
+[2025-07-17 22:55:06] Resultado de la consulta: Array
+(
+    [IDusuario] => 11
+    [Nombre] => pepe
+    [Correo] => pepe@pepe.com
+    [Contrasena] => pepe
+    [Roll] => usuario
+)
+
+[2025-07-17 22:55:06] Usuario encontrado en BD: pepe@pepe.com
+[2025-07-17 22:55:06] Contraseña verificada correctamente
+[2025-07-17 22:55:06] Sesión iniciada para usuario ID: 11
+[2025-07-17 22:55:06] Redirigiendo a index.html
+[2025-07-17 22:57:23] Iniciando proceso de login
+[2025-07-17 22:57:23] Datos recibidos - Correo: pepe@pepe.com, Contrasena: pepe
+[2025-07-17 22:57:23] Correo escapado: pepe@pepe.com
+[2025-07-17 22:57:23] Consulta SQL a ejecutar: SELECT IDusuario, Nombre, Correo, Contrasena, Roll FROM usuarios WHERE Correo = 'pepe@pepe.com'
+[2025-07-17 22:57:23] Consulta ejecutada correctamente
+[2025-07-17 22:57:23] Resultado de la consulta: Array
+(
+    [IDusuario] => 11
+    [Nombre] => pepe
+    [Correo] => pepe@pepe.com
+    [Contrasena] => pepe
+    [Roll] => usuario
+)
+
+[2025-07-17 22:57:23] Usuario encontrado en BD: pepe@pepe.com
+[2025-07-17 22:57:23] Contraseña verificada correctamente
+[2025-07-17 22:57:23] Sesión iniciada para usuario ID: 11
+[2025-07-17 22:57:23] Redirigiendo a index.html
+[2025-07-17 22:57:28] Iniciando proceso de login
+[2025-07-17 22:57:28] Datos recibidos - Correo: pepe@pepe.com, Contrasena: pepe
+[2025-07-17 22:57:28] Correo escapado: pepe@pepe.com
+[2025-07-17 22:57:28] Consulta SQL a ejecutar: SELECT IDusuario, Nombre, Correo, Contrasena, Roll FROM usuarios WHERE Correo = 'pepe@pepe.com'
+[2025-07-17 22:57:28] Consulta ejecutada correctamente
+[2025-07-17 22:57:28] Resultado de la consulta: Array
+(
+    [IDusuario] => 11
+    [Nombre] => pepe
+    [Correo] => pepe@pepe.com
+    [Contrasena] => pepe
+    [Roll] => usuario
+)
+
+[2025-07-17 22:57:28] Usuario encontrado en BD: pepe@pepe.com
+[2025-07-17 22:57:28] Contraseña verificada correctamente
+[2025-07-17 22:57:28] Sesión iniciada para usuario ID: 11
+[2025-07-17 22:57:28] Redirigiendo a index.html
+[2025-07-17 22:57:30] Intento de acceso con método no POST
+[2025-07-17 22:57:38] Iniciando proceso de login
+[2025-07-17 22:57:38] Datos recibidos - Correo: pepe@pepe.com, Contrasena: pepe
+[2025-07-17 22:57:38] Correo escapado: pepe@pepe.com
+[2025-07-17 22:57:38] Consulta SQL a ejecutar: SELECT IDusuario, Nombre, Correo, Contrasena, Roll FROM usuarios WHERE Correo = 'pepe@pepe.com'
+[2025-07-17 22:57:38] Consulta ejecutada correctamente
+[2025-07-17 22:57:38] Resultado de la consulta: Array
+(
+    [IDusuario] => 11
+    [Nombre] => pepe
+    [Correo] => pepe@pepe.com
+    [Contrasena] => pepe
+    [Roll] => usuario
+)
+
+[2025-07-17 22:57:38] Usuario encontrado en BD: pepe@pepe.com
+[2025-07-17 22:57:38] Contraseña verificada correctamente
+[2025-07-17 22:57:38] Sesión iniciada para usuario ID: 11
+[2025-07-17 22:57:38] Redirigiendo a index.html
+[2025-07-17 22:57:53] Iniciando proceso de login
+[2025-07-17 22:57:53] Datos recibidos - Correo: pepe@pepe.com, Contrasena: pepe
+[2025-07-17 22:57:53] Correo escapado: pepe@pepe.com
+[2025-07-17 22:57:53] Consulta SQL a ejecutar: SELECT IDusuario, Nombre, Correo, Contrasena, Roll FROM usuarios WHERE Correo = 'pepe@pepe.com'
+[2025-07-17 22:57:53] Consulta ejecutada correctamente
+[2025-07-17 22:57:53] Resultado de la consulta: Array
+(
+    [IDusuario] => 11
+    [Nombre] => pepe
+    [Correo] => pepe@pepe.com
+    [Contrasena] => pepe
+    [Roll] => usuario
+)
+
+[2025-07-17 22:57:53] Usuario encontrado en BD: pepe@pepe.com
+[2025-07-17 22:57:53] Contraseña verificada correctamente
+[2025-07-17 22:57:53] Sesión iniciada para usuario ID: 11
+[2025-07-17 22:57:53] Redirigiendo a index.html
